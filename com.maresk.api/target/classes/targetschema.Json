@@ -1,0 +1,875 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "fairings": {
+                "reused": null,
+                "recovery_attempt": true,
+                "recovered": null,
+                "ships": [
+                    "5ea6ed2e080df4000697c907"
+                ]
+            },
+            "links": {
+                "patch": {
+                    "small": "https://i.imgur.com/Ehe9AgY.png",
+                    "large": "https://i.imgur.com/Ehe9AgY.png"
+                },
+                "reddit": {
+                    "campaign": "https://www.reddit.com/r/spacex/comments/io0swm/gps_iii_sv04_launch_campaign_thread/",
+                    "launch": "https://www.reddit.com/r/spacex/comments/jobxn2/rspacex_gps_iii_sv04_sacagawea_official_launch/",
+                    "media": null,
+                    "recovery": null
+                },
+                "flickr": {
+                    "small": [],
+                    "original": []
+                },
+                "presskit": null,
+                "webcast": "https://youtu.be/wufXF5YKR1M",
+                "youtube_id": "wufXF5YKR1M",
+                "article": "https://spaceflightnow.com/2020/11/06/spacex-launches-gps-navigation-satellite-from-cape-canaveral/",
+                "wikipedia": "https://en.wikipedia.org/wiki/GPS_Block_III"
+            },
+            "static_fire_date_utc": "2020-09-25T05:42:00.000Z",
+            "static_fire_date_unix": 1601012520,
+            "tbd": false,
+            "net": false,
+            "window": null,
+            "rocket": "5e9d0d95eda69973a809d1ec",
+            "success": true,
+            "details": "SpaceX will launch GPS Block III Space Vehicle 04 from SLC-40, Cape Canaveral AFS aboard a Falcon 9. GPS III is owned and operated by the US Air Force and produced by Lockheed Martin. This will be the fourth GPS III satellite launched and the third launched by SpaceX. The satellite will be delivered into a MEO transfer orbit. The booster for this mission will land on an ASDS.",
+            "crew": [],
+            "ships": [
+                "5ea6ed30080df4000697c913",
+                "5ee68c683c228f36bd5809b5",
+                "5ea6ed2e080df4000697c907"
+            ],
+            "capsules": [],
+            "payloads": [
+                "5eb0e4d2b6c3bb0006eeb25e"
+            ],
+            "launchpad": "5e9e4501f509094ba4566f84",
+            "auto_update": true,
+            "failures": [],
+            "flight_number": 106,
+            "name": "GPS III SV04 (Sacagawea)",
+            "date_utc": "2020-11-05T23:24:00.000Z",
+            "date_unix": 1604618640,
+            "date_local": "2020-11-05T18:24:00-05:00",
+            "date_precision": "hour",
+            "upcoming": false,
+            "cores": [
+                {
+                    "core": "5f57c5440622a633027900a0",
+                    "flight": 1,
+                    "gridfins": true,
+                    "legs": true,
+                    "reused": false,
+                    "landing_attempt": true,
+                    "landing_success": true,
+                    "landing_type": "ASDS",
+                    "landpad": "5e9e3032383ecb6bb234e7ca"
+                }
+            ],
+            "id": "5eb87d4cffd86e000604b38d"
+        }
+    ],
+    "required": [
+        "fairings",
+        "links",
+        "static_fire_date_utc",
+        "static_fire_date_unix",
+        "tbd",
+        "net",
+        "window",
+        "rocket",
+        "success",
+        "details",
+        "crew",
+        "ships",
+        "capsules",
+        "payloads",
+        "launchpad",
+        "auto_update",
+        "failures",
+        "flight_number",
+        "name",
+        "date_utc",
+        "date_unix",
+        "date_local",
+        "date_precision",
+        "upcoming",
+        "cores",
+        "id"
+    ],
+    "properties": {
+        "fairings": {
+            "$id": "#/properties/fairings",
+            "type": "object",
+            "title": "The fairings schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "reused": null,
+                    "recovery_attempt": true,
+                    "recovered": null,
+                    "ships": [
+                        "5ea6ed2e080df4000697c907"
+                    ]
+                }
+            ],
+            "required": [
+                "reused",
+                "recovery_attempt",
+                "recovered",
+                "ships"
+            ],
+            "properties": {
+                "reused": {
+                    "$id": "#/properties/fairings/properties/reused",
+                    "type": "null",
+                    "title": "The reused schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "recovery_attempt": {
+                    "$id": "#/properties/fairings/properties/recovery_attempt",
+                    "type": "boolean",
+                    "title": "The recovery_attempt schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "recovered": {
+                    "$id": "#/properties/fairings/properties/recovered",
+                    "type": "null",
+                    "title": "The recovered schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "ships": {
+                    "$id": "#/properties/fairings/properties/ships",
+                    "type": "array",
+                    "title": "The ships schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            "5ea6ed2e080df4000697c907"
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/fairings/properties/ships/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/fairings/properties/ships/items/anyOf/0",
+                                "type": "string",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "5ea6ed2e080df4000697c907"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        },
+        "links": {
+            "$id": "#/properties/links",
+            "type": "object",
+            "title": "The links schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "patch": {
+                        "small": "https://i.imgur.com/Ehe9AgY.png",
+                        "large": "https://i.imgur.com/Ehe9AgY.png"
+                    },
+                    "reddit": {
+                        "campaign": "https://www.reddit.com/r/spacex/comments/io0swm/gps_iii_sv04_launch_campaign_thread/",
+                        "launch": "https://www.reddit.com/r/spacex/comments/jobxn2/rspacex_gps_iii_sv04_sacagawea_official_launch/",
+                        "media": null,
+                        "recovery": null
+                    },
+                    "flickr": {
+                        "small": [],
+                        "original": []
+                    },
+                    "presskit": null,
+                    "webcast": "https://youtu.be/wufXF5YKR1M",
+                    "youtube_id": "wufXF5YKR1M",
+                    "article": "https://spaceflightnow.com/2020/11/06/spacex-launches-gps-navigation-satellite-from-cape-canaveral/",
+                    "wikipedia": "https://en.wikipedia.org/wiki/GPS_Block_III"
+                }
+            ],
+            "required": [
+                "patch",
+                "reddit",
+                "flickr",
+                "presskit",
+                "webcast",
+                "youtube_id",
+                "article",
+                "wikipedia"
+            ],
+            "properties": {
+                "patch": {
+                    "$id": "#/properties/links/properties/patch",
+                    "type": "object",
+                    "title": "The patch schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "small": "https://i.imgur.com/Ehe9AgY.png",
+                            "large": "https://i.imgur.com/Ehe9AgY.png"
+                        }
+                    ],
+                    "required": [
+                        "small",
+                        "large"
+                    ],
+                    "properties": {
+                        "small": {
+                            "$id": "#/properties/links/properties/patch/properties/small",
+                            "type": "string",
+                            "title": "The small schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://i.imgur.com/Ehe9AgY.png"
+                            ]
+                        },
+                        "large": {
+                            "$id": "#/properties/links/properties/patch/properties/large",
+                            "type": "string",
+                            "title": "The large schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://i.imgur.com/Ehe9AgY.png"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "reddit": {
+                    "$id": "#/properties/links/properties/reddit",
+                    "type": "object",
+                    "title": "The reddit schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "campaign": "https://www.reddit.com/r/spacex/comments/io0swm/gps_iii_sv04_launch_campaign_thread/",
+                            "launch": "https://www.reddit.com/r/spacex/comments/jobxn2/rspacex_gps_iii_sv04_sacagawea_official_launch/",
+                            "media": null,
+                            "recovery": null
+                        }
+                    ],
+                    "required": [
+                        "campaign",
+                        "launch",
+                        "media",
+                        "recovery"
+                    ],
+                    "properties": {
+                        "campaign": {
+                            "$id": "#/properties/links/properties/reddit/properties/campaign",
+                            "type": "string",
+                            "title": "The campaign schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://www.reddit.com/r/spacex/comments/io0swm/gps_iii_sv04_launch_campaign_thread/"
+                            ]
+                        },
+                        "launch": {
+                            "$id": "#/properties/links/properties/reddit/properties/launch",
+                            "type": "string",
+                            "title": "The launch schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "https://www.reddit.com/r/spacex/comments/jobxn2/rspacex_gps_iii_sv04_sacagawea_official_launch/"
+                            ]
+                        },
+                        "media": {
+                            "$id": "#/properties/links/properties/reddit/properties/media",
+                            "type": "null",
+                            "title": "The media schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        },
+                        "recovery": {
+                            "$id": "#/properties/links/properties/reddit/properties/recovery",
+                            "type": "null",
+                            "title": "The recovery schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": null,
+                            "examples": [
+                                null
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "flickr": {
+                    "$id": "#/properties/links/properties/flickr",
+                    "type": "object",
+                    "title": "The flickr schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "small": [],
+                            "original": []
+                        }
+                    ],
+                    "required": [
+                        "small",
+                        "original"
+                    ],
+                    "properties": {
+                        "small": {
+                            "$id": "#/properties/links/properties/flickr/properties/small",
+                            "type": "array",
+                            "title": "The small schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                []
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/links/properties/flickr/properties/small/items"
+                            }
+                        },
+                        "original": {
+                            "$id": "#/properties/links/properties/flickr/properties/original",
+                            "type": "array",
+                            "title": "The original schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                []
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/links/properties/flickr/properties/original/items"
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "presskit": {
+                    "$id": "#/properties/links/properties/presskit",
+                    "type": "null",
+                    "title": "The presskit schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": null,
+                    "examples": [
+                        null
+                    ]
+                },
+                "webcast": {
+                    "$id": "#/properties/links/properties/webcast",
+                    "type": "string",
+                    "title": "The webcast schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://youtu.be/wufXF5YKR1M"
+                    ]
+                },
+                "youtube_id": {
+                    "$id": "#/properties/links/properties/youtube_id",
+                    "type": "string",
+                    "title": "The youtube_id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "wufXF5YKR1M"
+                    ]
+                },
+                "article": {
+                    "$id": "#/properties/links/properties/article",
+                    "type": "string",
+                    "title": "The article schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://spaceflightnow.com/2020/11/06/spacex-launches-gps-navigation-satellite-from-cape-canaveral/"
+                    ]
+                },
+                "wikipedia": {
+                    "$id": "#/properties/links/properties/wikipedia",
+                    "type": "string",
+                    "title": "The wikipedia schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "https://en.wikipedia.org/wiki/GPS_Block_III"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "static_fire_date_utc": {
+            "$id": "#/properties/static_fire_date_utc",
+            "type": "string",
+            "title": "The static_fire_date_utc schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-09-25T05:42:00.000Z"
+            ]
+        },
+        "static_fire_date_unix": {
+            "$id": "#/properties/static_fire_date_unix",
+            "type": "integer",
+            "title": "The static_fire_date_unix schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1601012520
+            ]
+        },
+        "tbd": {
+            "$id": "#/properties/tbd",
+            "type": "boolean",
+            "title": "The tbd schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "net": {
+            "$id": "#/properties/net",
+            "type": "boolean",
+            "title": "The net schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "window": {
+            "$id": "#/properties/window",
+            "type": "null",
+            "title": "The window schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "rocket": {
+            "$id": "#/properties/rocket",
+            "type": "string",
+            "title": "The rocket schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "5e9d0d95eda69973a809d1ec"
+            ]
+        },
+        "success": {
+            "$id": "#/properties/success",
+            "type": "boolean",
+            "title": "The success schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "details": {
+            "$id": "#/properties/details",
+            "type": "string",
+            "title": "The details schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "SpaceX will launch GPS Block III Space Vehicle 04 from SLC-40, Cape Canaveral AFS aboard a Falcon 9. GPS III is owned and operated by the US Air Force and produced by Lockheed Martin. This will be the fourth GPS III satellite launched and the third launched by SpaceX. The satellite will be delivered into a MEO transfer orbit. The booster for this mission will land on an ASDS."
+            ]
+        },
+        "crew": {
+            "$id": "#/properties/crew",
+            "type": "array",
+            "title": "The crew schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/crew/items"
+            }
+        },
+        "ships": {
+            "$id": "#/properties/ships",
+            "type": "array",
+            "title": "The ships schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "5ea6ed30080df4000697c913",
+                    "5ee68c683c228f36bd5809b5"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/ships/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/ships/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "5ea6ed30080df4000697c913",
+                            "5ee68c683c228f36bd5809b5"
+                        ]
+                    }
+                ]
+            }
+        },
+        "capsules": {
+            "$id": "#/properties/capsules",
+            "type": "array",
+            "title": "The capsules schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/capsules/items"
+            }
+        },
+        "payloads": {
+            "$id": "#/properties/payloads",
+            "type": "array",
+            "title": "The payloads schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "5eb0e4d2b6c3bb0006eeb25e"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/payloads/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/payloads/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "5eb0e4d2b6c3bb0006eeb25e"
+                        ]
+                    }
+                ]
+            }
+        },
+        "launchpad": {
+            "$id": "#/properties/launchpad",
+            "type": "string",
+            "title": "The launchpad schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "5e9e4501f509094ba4566f84"
+            ]
+        },
+        "auto_update": {
+            "$id": "#/properties/auto_update",
+            "type": "boolean",
+            "title": "The auto_update schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "failures": {
+            "$id": "#/properties/failures",
+            "type": "array",
+            "title": "The failures schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/failures/items"
+            }
+        },
+        "flight_number": {
+            "$id": "#/properties/flight_number",
+            "type": "integer",
+            "title": "The flight_number schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                106
+            ]
+        },
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "GPS III SV04 (Sacagawea)"
+            ]
+        },
+        "date_utc": {
+            "$id": "#/properties/date_utc",
+            "type": "string",
+            "title": "The date_utc schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-11-05T23:24:00.000Z"
+            ]
+        },
+        "date_unix": {
+            "$id": "#/properties/date_unix",
+            "type": "integer",
+            "title": "The date_unix schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1604618640
+            ]
+        },
+        "date_local": {
+            "$id": "#/properties/date_local",
+            "type": "string",
+            "title": "The date_local schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-11-05T18:24:00-05:00"
+            ]
+        },
+        "date_precision": {
+            "$id": "#/properties/date_precision",
+            "type": "string",
+            "title": "The date_precision schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "hour"
+            ]
+        },
+        "upcoming": {
+            "$id": "#/properties/upcoming",
+            "type": "boolean",
+            "title": "The upcoming schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "cores": {
+            "$id": "#/properties/cores",
+            "type": "array",
+            "title": "The cores schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "core": "5f57c5440622a633027900a0",
+                        "flight": 1,
+                        "gridfins": true,
+                        "legs": true,
+                        "reused": false,
+                        "landing_attempt": true,
+                        "landing_success": true,
+                        "landing_type": "ASDS",
+                        "landpad": "5e9e3032383ecb6bb234e7ca"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/cores/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/cores/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "core": "5f57c5440622a633027900a0",
+                                "flight": 1,
+                                "gridfins": true,
+                                "legs": true,
+                                "reused": false,
+                                "landing_attempt": true,
+                                "landing_success": true,
+                                "landing_type": "ASDS",
+                                "landpad": "5e9e3032383ecb6bb234e7ca"
+                            }
+                        ],
+                        "required": [
+                            "core",
+                            "flight",
+                            "gridfins",
+                            "legs",
+                            "reused",
+                            "landing_attempt",
+                            "landing_success",
+                            "landing_type",
+                            "landpad"
+                        ],
+                        "properties": {
+                            "core": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/core",
+                                "type": "string",
+                                "title": "The core schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "5f57c5440622a633027900a0"
+                                ]
+                            },
+                            "flight": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/flight",
+                                "type": "integer",
+                                "title": "The flight schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "gridfins": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/gridfins",
+                                "type": "boolean",
+                                "title": "The gridfins schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "legs": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/legs",
+                                "type": "boolean",
+                                "title": "The legs schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "reused": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/reused",
+                                "type": "boolean",
+                                "title": "The reused schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "landing_attempt": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/landing_attempt",
+                                "type": "boolean",
+                                "title": "The landing_attempt schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "landing_success": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/landing_success",
+                                "type": "boolean",
+                                "title": "The landing_success schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": false,
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "landing_type": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/landing_type",
+                                "type": "string",
+                                "title": "The landing_type schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "ASDS"
+                                ]
+                            },
+                            "landpad": {
+                                "$id": "#/properties/cores/items/anyOf/0/properties/landpad",
+                                "type": "string",
+                                "title": "The landpad schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "5e9e3032383ecb6bb234e7ca"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        },
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "5eb87d4cffd86e000604b38d"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
